@@ -1,0 +1,249 @@
+	.nav{ height:49px;
+		  display:flex;
+		  position:relative;
+		  justify-content:right;
+		  gap:15px;
+	    }
+	.img1{
+		  width:28px;
+		  height:28px;
+		  border-radius:50%;
+		  background:#f1f3f4;
+		  position:relative;
+		  top:-5px;
+		}
+	a{
+		  text-decoration: none;
+		  color:black;
+		}
+	a:hover {
+		  text-decoration: underline; 
+		}
+		
+	.a1{
+		  text-decoration: none;
+		  color:black;
+		}
+	.a1:hover {
+		  text-decoration: none;
+		  background:#f1f3f4;
+		  border-radius:10px;
+		  padding:5px;
+		  
+		}
+	
+	 .container{
+		  text-align:center;
+		  margin-top:-50px;
+		}
+	 
+	 .logo1{
+		  font-size:100px;
+		  font-size:bold;
+		  font-family: Arial, sans-serif;
+		  justify-content:center;
+		  position:relative;
+		  top:40px;
+		}
+				
+	 .search-box{
+		  margin:0px auto;
+		  width:100%;
+		  max-width:600px;
+		  display:flex;
+		  align-items:center;
+		  padding:8px 5px;
+		  border:1px solid #dfe1e5;
+		  border-radius:30px;
+		  box-shadow:0 1px 6px rgba(32,33,36,.28);
+		  margin-top: 4px;
+		}
+	.search-box input{
+	     height:30px;
+		 border:none;
+		 outline:none;
+		 font-family: Arial, sans-serif;
+	     flex:1;
+		 font-size:20px;
+		 padding:0 10px;
+		}
+	.icon-gap{
+		display:flex;
+		gap:20px;
+	}
+	.shortcuts{
+		  margin-top:40px;
+		  display:flex;
+		  justify-content:center;
+		  flex-wrap:wrap;
+		  gap:30px;
+		}
+
+	.shortcut{
+		  width:80px;
+		  text-align:center;
+		  cursor:pointer;
+		}
+
+	 .img{
+		  width:48px;
+		  height:48px;
+		  border-radius:50%;
+		  background:#f1f3f4;
+		  display:flex;
+		  justify-content:center;
+		  align-items:center;
+		  margin:0 auto 8px;
+		  font-weight:bold;
+		}
+
+	.shortcut span{
+		  font-size:15px;
+		  font-family: Arial, sans-serif;
+		}
+	.search-page {
+	  font-family: Arial, sans-serif;
+	  background: #fff;
+	}
+	
+	.search-header {
+	  border-bottom: 1px solid #ddd;
+	  display:flex;
+	  align-items:center;
+	  padding-bottom: 30px;
+	}
+
+	.logo {
+	  font-size: 26px;
+	  font-weight: bold;
+	  text-decoration: none;
+	  margin-top: 25px;
+	  padding-left:30px;
+	}
+
+	.results-container {
+	  padding: 30px 30px;
+	  max-width: 700px;
+	}
+
+	.search-item {
+	  margin-bottom: 28px;
+	}
+
+	.result-link {
+	  text-decoration: none;
+	}
+
+	.result-url {
+	  display: block;
+	  font-size: 14px;
+	  color: #202124;
+	}
+
+	.result-title {
+	  font-size: 20px;
+	  color: #1a0dab;
+	  font-weight: 500;
+	  margin: 0;
+	}
+
+	.result-title:hover {
+	  text-decoration: underline;
+	}
+
+	.result-desc {
+	  font-size: 14px;
+	  color: #4d5156;
+	  line-height: 1.6;
+	  margin-top: 6px;
+	}
+.result-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.site-logo {
+  width: 28px;
+  height: 28px;
+  padding:5px;
+  border:1px solid #8C8D8F;
+  border-radius: 20px;
+}
+
+.result-url {
+  font-size: 14px;
+ 
+}
+
+.divicons{
+    background: transparent;
+    align-items: center;
+    flex: 1 0 auto;
+    flex-direction: row;
+    display: flex;
+    cursor: pointer;
+	border-right:1px;
+}
+/* ================= GOOGLE MOBILE CLONE ================= */
+@media (max-width: 480px) {
+  .nav{
+    height:44px;
+    padding:8px 10px;
+    gap:12px;
+  }
+
+  .img1{
+    width:24px;
+    height:24px;
+    top:0;
+  }
+
+  .container{
+    padding:0 12px;
+  }
+  .logo1{
+    font-size:52px;
+    margin-top:20px;
+    top:0;
+  }
+
+  .search-box{
+    width:100%;
+    max-width:100%;
+    padding:8px 12px;
+    border-radius:24px;
+    margin:18px auto;
+    box-shadow:0 1px 3px rgba(0,0,0,.2);
+  }
+
+  .search-box input{
+    font-size:16px;
+    height:24px;
+  }
+
+  .icon-gap{
+    gap:10px;
+  }
+  .shortcuts{
+    margin-top:18px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:16px;
+  }
+
+  .shortcut{
+    width:100%;
+  }
+
+  .img{
+    width:44px;
+    height:44px;
+    font-size:15px;
+  }
+
+  .shortcut span{
+    font-size:13px;
+  }
+}
