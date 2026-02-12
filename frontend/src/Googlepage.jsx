@@ -63,14 +63,14 @@ const handleSubmit = async (e) => {
 
   try {
     const res = await axios.post(
-      "https://localhost:5000/searchData",
+      "https://google-backend.onrender.com/searchData",
       form
     );
 
     navigate("/searchpage", {
       state: {
         result: res.data.result,
-        search: form.search, 
+        search: form.search,
       },
     });
 
@@ -79,6 +79,7 @@ const handleSubmit = async (e) => {
     console.log("Error:", err);
   }
 };
+
 
 
   return (
