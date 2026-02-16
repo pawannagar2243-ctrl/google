@@ -6,15 +6,19 @@ const axios = require("axios");
 
 const app = express();
 
-// ✅ Middleware
-app.use(express.json());
-
+// ✅ CORS SABSE UPAR
 app.use(cors({
-  origin: "https://google-2-s99c.onrender.com", // frontend URL
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: "https://google-2-s99c.onrender.com",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
 }));
 
+// ✅ Preflight handle (VERY IMPORTANT)
+app.options("*", cors());
+
+// ✅ Body parser
+app.use(express.json());
 
 // ✅ MongoDB Connect
 mongoose.connect(process.env.MONGO_URI)
@@ -76,7 +80,6 @@ app.get("/searchData", async (req, res) => {
   }
 });
 
-// ✅ IMPORTANT: Render PORT
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
