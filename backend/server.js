@@ -10,9 +10,11 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: "https://google-2-s99c.onrender.com",
+  origin: "https://google-2-s99c.onrender.com", // frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
+
 
 // ✅ MongoDB Connect
 mongoose.connect(process.env.MONGO_URI)
