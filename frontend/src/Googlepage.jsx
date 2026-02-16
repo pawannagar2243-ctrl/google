@@ -36,7 +36,7 @@ function Googlepage() {
 
     try {
  const res = await axios.post(
-  "https://google-2-wwe3.onrender.com/searchData",
+  "https://google-1-wwe3.onrender.com/searchData",
   form
 );
 
