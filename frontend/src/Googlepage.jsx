@@ -35,10 +35,11 @@ function Googlepage() {
     setForm(updatedForm);
 
     try {
- const res = await axios.post(
+const res = await axios.post(
   "https://google-1-wwe3.onrender.com/searchData",
   form
 );
+
 
 
       navigate("/searchpage", {
